@@ -29,3 +29,4 @@ Reproducibility is critical. The foundational components of this analysis are pi
 | Minikube   | `v1.36.0` | Local Kubernetes provider          |
 | Kubernetes | `v1.33.1` | Version provisioned by Minikube    |
 | Docker     | `28.1.1`  | Container runtime used by Minikube |
+| ArgoCD     | `v3.1.7`  | GitOps controller                  |
