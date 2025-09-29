@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app
+  namespace: argocd
+  finalizers:
+    - argocd.argoproj.io/resources-finalizer
+spec:
+  project: default
+
+  source:
+    repoURL: "https://github.com/Trxncoo/performance_analysis_and_tuning_of_minio_within_a_kubernetes_environment"
+    path: apps
+    targetRevision: main
+
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
