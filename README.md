@@ -24,9 +24,10 @@ This creates a single-node cluster with the following key characteristics:
 
 Reproducibility is critical. The foundational components of this analysis are pinned to the following software versions:
 
-| Component  | Version   | Notes                              |
-| ---------- | --------- | ---------------------------------- |
-| Minikube   | `v1.36.0` | Local Kubernetes provider          |
-| Kubernetes | `v1.33.1` | Version provisioned by Minikube    |
-| Docker     | `28.1.1`  | Container runtime used by Minikube |
-| ArgoCD     | `v3.1.7`  | GitOps controller                  |
+| Component             | Version   | Notes                               |
+| --------------------- | --------- | ----------------------------------- |
+| Minikube              | `v1.36.0` | Local Kubernetes provider           |
+| Kubernetes            | `v1.33.1` | Version provisioned by Minikube     |
+| Docker                | `28.1.1`  | Container runtime used by Minikube  |
+| ArgoCD                | `v3.1.7`  | GitOps controller                   |
+| kube-prometheus-stack | `77.12.0` | Prometheus & Grafana for monitoring |
